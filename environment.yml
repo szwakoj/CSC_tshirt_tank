@@ -1,4 +1,4 @@
-name: /home/good-guy/anaconda3_OLD/envs/ml
+name: ml
 channels:
   - nvidia
   - defaults

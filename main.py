@@ -61,7 +61,7 @@ def main():
         #every tenth frame
         if frame_num % 10 == 0:
             #detect faces and extract bounding boxes
-            bounding_boxes = haar_cascade.detectMultiScale(frame, scaleFactor=1.1, minNeighbors=9)
+            bounding_boxes = haar_cascade.detectMultiScale(frame, scaleFactor=1.5, minNeighbors=6)
             for (_x, _y, _w, _h) in bounding_boxes:
                 #convert to int for dlib
                 x = int(_x)

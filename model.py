@@ -6,7 +6,6 @@ import tensorflow.keras
 from tensorflow.keras import layers, Model
 import cv2
 
-
 class Crowd_Model(Model):
     def __init__(sel):
         super().__init__()

@@ -51,6 +51,25 @@ class Feature_Pyramid(layers.Layer):
 
         return p2, p3, p4, p5
 
+
+class AnchorBox:
+    def __init__(self):
+        self.aspects = []
+        self.scales = [2 ** x for x in []]
+        self._num_anchors = len(self.aspects) * len(self.scales)
+        self._strides = []
+        self._areas = [x ** 2 for x in []]
+        self._anchor_dims = self._compute_dims()
+
+    def _compute_dims(self):
+        anchor_dims_all = []
+        for area in self._areas:
+
+    def _get_anchors(self, feautre_h, feature_w, level):
+
+
+    def get_anchors(self, img_h, img_w):
+
 class Face_Model(Model):
     def __init__(sel):
         super().__init__()
